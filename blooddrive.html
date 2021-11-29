@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1 transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>LMCC -- Blood Drive</title>
+<script type="text/javascript">
+var rotatorMsg=new Array("blooddriveimg1.gif", "blooddriveimg2.gif","blooddriveimg3.gif","blooddriveimg4.gif")
+var rotatorCntr=3
+function RotateIt(){
+   rotatorCntr+=1
+    if (rotatorCntr==4)  rotatorCntr=0
+    document.Rotate.src = rotatorMsg[rotatorCntr]
+    setTimeout("RotateIt()",2000)
+}
+</script>
+<style type="text/css">
+body
+   {background: url(clinicbckgrnd.gif) }
+.style1 {color: #996600;
+         font-size:14px;}
+</style>
+</head>
+<body onload="RotateIt()">
+<p><img src="project11-lmccpopup.jpg" alt="Logo" width="527" height="110" /></p>
+<table width="50%" border="0">
+   <tr>
+      <td width="53%" height="90">
+<img src="blooddriveimg1.gif" alt="be a Hero" name="Rotate"/>
+      </td>
+      <td width="47%"></td>
+  </tr>
+   <tr align="left">
+     <td colspan="2" nowrap="nowrap">Every summer, Lake Michigan Community College challenges one of its rival schools to a<br />
+       contest to see who can reach the goal of 2,000 donors. The challenge takes place during <br />
+       the Michigan State Fair in Lansing, MI. This year, our challenger is Berrien Springs College.</td>
+   </tr>
+  <tr align="left">
+     <td colspan="2" nowrap="nowrap">
+        <ul class="style1">
+         <li><strong><font face="Geneva, Arial, Helvetica, sans-serif">A single donation can help save three lives in as little as 48 hours </font></strong></li>
+         <li><strong><font face="Geneva, Arial, Helvetica, sans-serif">Every two seconds someone in the U.S. is in need of blood </font></strong></li>
+         <li><strong><font face="Geneva, Arial, Helvetica, sans-serif">Blood supplies are often critically short, so your help is needed</font></strong></li>
+         <li><strong><font face="Geneva, Arial, Helvetica, sans-serif">Please help us reach our goal of 2,000 donors</font></strong></li>
+       </ul>    </td>
+ </tr>
+ <tr>
+     <td colspan="2">
+     <p><a href="JavaScript:close()">Close</a></p>     </td>
+  </tr>
+</table>
+</body>
+</html>

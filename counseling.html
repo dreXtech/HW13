@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1 transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Counseling</title>
+<script type="text/javascript">
+	function popUp(evnt,currElement){
+		documentObj="document.all"
+		styleObj=".style"
+		if (currElement!=0){
+			var DOMobj=eval(documentObj+'.'+currElement+styleObj)
+			var state=DOMobj.visibility
+			if (state=="visible" || state=="show"){
+				DOMobj.visibility="hidden"
+			}
+			else{
+				topVal=eval(event.y+10)
+				leftVal=eval(event.x-125)
+				if (leftVal<2) leftVal=2
+				DOMobj.top=topVal
+				DOMobj.left=leftVal
+				DOMobj.visibility="visible"
+			}
+		}
+	}
+</script>
+
+<style type="text/css">
+#Popup1{
+	position: absolute; visibility: hidden;
+	z-index: 10; top: 10px; left:10;
+}
+#Popup2{
+	position: absolute; visibility: hidden;
+	z-index: 10; top: 10px; left:10;
+}
+
+#Popup3{
+	position: absolute; visibility: hidden;
+	z-index: 10; top: 10px; left:10;
+}
+#Popup4{
+	position: absolute; visibility: hidden;
+	z-index: 10; top: 10px; left:10;
+}
+.PopupText{
+	background-color: goldenrod;
+	layer-background-color:goldenrod;
+	padding: 5;
+	border: 3px solid black;
+	width: 250;
+	color: black;
+}
+
+
+
+body {
+	background-color: #fffbe8;
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<p align="left"><img border="0" src="project11-subbanner.gif" alt="banner" width="496" height="58" /></p>
+    <p class="style1">Counseling Services</p>
+       <p>Lake Michigan Community College offers numerous counseling services for students. The <a href="JAVASCRIPT:popUp(null,0)" onmouseover="popUp(event,'Popup1')">Counseling Services</a> staff has expertise in a number of areas, including<a href="JAVASCRIPT:popUp(null,0)" onmouseover="popUp(event,'Popup2')"> Occupational Development</a>, <a href="JAVASCRIPT:popUp(null,0)" onmouseover="popUp(event,'Popup3')">Test Anxiety</a>, and <a href="JAVASCRIPT:popUp(null,0)" onmouseover="popUp(event,'Popup4')">Career Services</a>, to name a few. Our specialty is working with the various student problems that you can encounter throughout the semester. Most students find their own solutions to college situations, but at some time you may find you need the help of a trained, professional college counselor. Adjusting to college life sometimes can cause stress that interferes with a student's success. The Counseling Services Center has individual and group programs to help students build better self-awareness and problem-solving skills. All appointments and sessions through Counseling Services are confidential and free of charges to currently enrolled students. </p>
+<p>Academic and career counselors are available from 8:00 a.m. to 9:00 p.m. 
+Monday through Thursday and from 8:00 a.m. to 6:00 p.m. Friday. Personal-needs 
+counselors are available by appointment only. For immediate crisis intervention, 
+please call extension 7111 from any campus phone.</p>
+<p align="center">
+<a href="chapter11college.html">Home</a></p>
+<br />
+<br />
+<span id="Popup1" class="PopupText">Academic and Personal-needs counselors are available to guide
+	you through your time on campus.
+</span>
+<span id="Popup2" class="PopupText">The ODP personnel address the need of students pursuing
+	degrees certification in the various health related fields, such as Nursing.
+</span>
+<span id="Popup3" class="PopupText">If you suffer from test anxiety, 
+	attend one of our classes to help you overcome your fears.
+</span>
+<span id="Popup4" class="PopupText">Our Career Services can help you with the decision-making
+	process about your life's goal through interest testing, and individual advising and counseling.
+</span>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

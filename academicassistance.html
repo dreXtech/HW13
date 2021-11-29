@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1 transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Academic Assistance</title>
+<script type="text/javascript">
+  var leftPX=950
+  function scrollImage(){
+    leftPX-=10
+    if(leftPX<-250) leftPX=950
+    document.all['Img1'].style.pixeLeft=leftPX
+    imager=setTimeout("scrollImage()",100)
+  }
+function stopScroll(){
+  clearTimeout(imager)
+}
+
+function restartScroll(){
+  setTimeout("scrollImage()",100)
+}
+
+function studentLife(){
+  window.open("collegestudentlife.html", "studentLife","scrollbar=yes,width=600,height=350")
+}
+
+</script>
+
+<style type="text/css">
+
+
+
+#Img1 {
+   position: absolute; top=420; left=950;	
+}	
+
+
+body {
+	background-color: #fffbe8;
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+}
+</style>
+</head>
+<body onload="scrollImage()">
+<p align="left"><img src="project11-subbanner.gif" alt="banner" width="496" height="58" /></p>
+  <p class="style1">Academic Assistance</p>
+    <p>Who is eligible for assistance?</p>
+      If you are a student at LMCC, you may seek academic advice or tutoring 
+assistance to avoid failing a class or to achieve academic honors. Please adhere 
+to the following requirements when you enter the Academic Assistance Center:
+      <ul>
+        <li><b>Bring your textbooks and class notes </b></li>
+        <li><b>Detail specific questions or problems </b></li>
+        <li><b>Do not expect tutors to do your work</b></li>
+        <li><b>Show that you have been attending class </b></li>
+      </ul>
+      Tutors are available for one-on-one study or in group study sessions. You also may use any of the self-help guides available at the center.    
+<br />
+<br />
+<p align="center"><a href="chapter11college.html">Home</a></p>
+<div id="Img1">
+  <img src="academicassistance.gif" alt="scrolling banner" style="cursor: hand" onmouseover="stopScroll()"
+  onmouseout="restartScroll()" onclick="studentLife" />
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
